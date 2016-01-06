@@ -1,5 +1,0 @@
-choice = input("Which file would you like to append to? ")
-print ("Appending/creating to " + choice) 
-
-keepAppending = True
-line = input("Write the line you would like to add. ")
