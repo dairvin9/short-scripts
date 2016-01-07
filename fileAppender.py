@@ -10,11 +10,12 @@ file = open(fileName, 'a')
 
 keepAppending = True
 
-while keepAppending:
-    line = input("Type the line you would like to add.\n")
-    file.write(line + '\n')
-    line = input("Hit Enter to add another line, and any other key to continue.\n")
-    if line != "":
-        keepAppending = False
+print("Type 'done' to stop adding lines to the file")
 
+while keepAppending:
+    line = input("Type the line you would like to add, or 'done' to finish.\n")
+    if line == "done":
+        keepAppending = False
+    else:
+        file.write(line + '\n')    
 file.close()        
