@@ -10,6 +10,7 @@ print ("Encrypting " + fileName)
 file = open(fileName, 'r+')
 
 fileContents = file.read()
+file.truncate()
 
 formatNumber = input("Give me a number:\n")
 
