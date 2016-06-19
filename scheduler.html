@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Scheduler</title>
+</head>
+<body> 
+	<!--<input type="file" id="scheduler.txt" />-->
+	<!--<input type='file' accept='image/*' onchange='openFile(event)'><br>-->
+	<script src = "scheduler.js"></script>
+	<body onload="checkFileAPI();">
+    <div id="container">    
+        <input type="file" onchange='readText(this)' />
+        <br/>
+        <hr/>   
+        <h3>Contents of the Text file:</h3>
+        <div id="main">
+            ...
+        </div>
+    </div>
+</body>
+</body>
+</html>
