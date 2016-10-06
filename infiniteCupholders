@@ -1,0 +1,28 @@
+'Infinity cupholder!
+
+' A wonderful, wonderful script
+
+Randomize()
+
+Dim value
+
+Do While 6>5
+	Randomize()
+	'
+	value = Int((10000000)*Rnd)
+
+	if value < 2 then
+
+		'MsgBox(value) ' Prints out the number picked
+		
+		Set oWMP = CreateObject("WMPlayer.OCX.7" )  
+		Set colCDROMs = oWMP.cdromCollection  
+ 
+		if colCDROMs.Count >= 1 then  
+			For i = 0 to colCDROMs.Count - 1  
+  
+				colCDROMs.Item(i).Eject  
+			Next ' cdrom	
+		End If 
+	End If
+Loop	
